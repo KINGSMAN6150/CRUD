@@ -67,7 +67,7 @@ app.delete('/api/products/:id', async (req,res) => {
     }
 })
 
-mongoose.connect("mongodb+srv://princesharma6150:R%40JKUM%40R6150@backend.galhs.mongodb.net/Node-API?retryWrites=true&w=majority&appName=Backend")
+mongoose.connect("mongodb+srv://princesharma6150:<db_password>@backend.galhs.mongodb.net/Node-API?retryWrites=true&w=majority&appName=Backend")
     .then(() => {
         console.log("connection success");
         app.listen(3000, () => {
